@@ -1,0 +1,31 @@
+PRSice2 codes:
+
+Rscript PRSice.R --dir . 
+--prsice ./PRSice 
+--base meta56.txt 
+--snp SNP 
+--chr CHR 
+--bp BP 
+--A1 A1 
+--A2 A2 
+--stat B 
+--pvalue P 
+--target PRS_INPUT_french-canadian 
+--thread 1 
+--beta 
+--binary-target F 
+--quantile 3 
+--quant-break 1,2,3 
+--quant-ref 2 
+--all-score
+
+
+
+R codes for kernel distribution plot: 
+risk <- read.csv("data", header = T, sep = ";") 
+risk$PRS <- as.numeric(as.character(risk$PRS))
+sm.density.compare(risk$PRS, risk$P)title(main="PRS distribution")
+mu <- 1
+sigma <- 0.5
+qs <- qnorm(c(0.05, 0.95), mean=mu, sd=sigma)
+abline(v=qs, col=2, lty=2) 
