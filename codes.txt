@@ -13,7 +13,7 @@ Rscript PRSice.R --dir .
 --target PRS_INPUT_french-canadian 
 --thread 1 
 --beta 
---binary-target F 
+--binary-target T
 --quantile 3 
 --quant-break 1,2,3 
 --quant-ref 2 
