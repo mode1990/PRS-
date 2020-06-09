@@ -14,9 +14,9 @@ Rscript PRSice.R --dir .
 --thread 1 
 --beta 
 --binary-target T
---quantile 3 
---quant-break 1,2,3 
---quant-ref 2 
+--quantile 10 
+--quant-break 1,2,3,4,5,6,7,8,9,10 
+--quant-ref 5 
 --all-score
 
 
