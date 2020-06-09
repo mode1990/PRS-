@@ -1,0 +1,65 @@
+PRSice 2.2.13 (2020-03-10) 
+https://github.com/choishingwan/PRSice
+(C) 2016-2020 Shing Wan (Sam) Choi and Paul F. O'Reilly
+GNU General Public License v3
+If you use PRSice in any published work, please cite:
+Choi SW, O'Reilly PF.
+PRSice-2: Polygenic Risk Score Software for Biobank-Scale Data.
+GigaScience 8, no. 7 (July 1, 2019)
+2020-06-09 10:58:20
+./PRSice \
+    --A1 A1 \
+    --A2 A2 \
+    --all-score  \
+    --bar-levels 0.001,0.05,0.1,0.2,0.3,0.4,0.5,1 \
+    --base meta56.txt \
+    --beta  \
+    --binary-target F \
+    --bp BP \
+    --chr CHR \
+    --clump-kb 250kb \
+    --clump-p 1.000000 \
+    --clump-r2 0.100000 \
+    --interval 5e-05 \
+    --lower 5e-08 \
+    --num-auto 22 \
+    --out PRSice \
+    --pvalue P \
+    --seed 2010527769 \
+    --snp SNP \
+    --stat B \
+    --target PRS_INPUT_french-canadian \
+    --thread 1 \
+    --upper 0.5
+
+Initializing Genotype file: PRS_INPUT_french-canadian (bed) 
+
+Start processing meta56 
+================================================== 
+
+Base file: meta56.txt 
+90 variant(s) observed in base file, with: 
+13 ambiguous variant(s) excluded 
+77 total variant(s) included from base file 
+
+Loading Genotype info from target 
+================================================== 
+
+1653 people (934 male(s), 706 female(s)) observed 
+1653 founder(s) included 
+
+13 variant(s) not found in previous data 
+77 variant(s) included 
+
+There are a total of 1 phenotype to process 
+
+Start performing clumping 
+
+Number of variant(s) after clumping : 76 
+
+Phenotype is a continuous phenotype 
+1653 sample(s) with valid phenotype 
+
+There are 1 region(s)/phenotype(s) with p-value > 0.1 (not 
+significant); 
+
